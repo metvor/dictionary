@@ -1,16 +1,21 @@
 import React from "react";
+import Meaning from "./Meaning";
 
 export default function Results(props) {
-
+if (props.data) {
     return (
-    <div className="Results text-capitalize">
-    <h1 className="searchWord">{props.data.word}</h1>
-    <ul className="definitions">
-        <li>{props.data.type}</li>
-        <li>{props.data.definition}</li>
-        <li>{props.data.phonetic}</li>
-    </ul>
+    <div className="Results">
+        <h1>{props.data.word}</h1>
+        {props.data.meanings.map(function (meaning, index) {
+           return ( 
+           <div key={index}>
+            <Meaning meaning={meaning} />
+            </div>
+           );
+        })}
     </div>
-    );
-
+);
+} else {
+    return null;
+}
 }
