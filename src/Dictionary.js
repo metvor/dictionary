@@ -26,8 +26,9 @@ return (
     <div className="searchForm">
         <form onSubmit={search}>
             <input type="search" placeholder="Search" autoFocus="on" onChange={handleKeyword}/>
-            <input type="submit" />
+            <input type="submit" value="Search"/>
             </form>
+        <br/>
         <Results data={results} />
     </div>
 );

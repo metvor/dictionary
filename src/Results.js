@@ -5,7 +5,8 @@ export default function Results(props) {
 if (props.data) {
     return (
     <div className="Results">
-        <h1>{props.data.word}</h1>
+        <h1 className="text-capitalize">{props.data.word}</h1>
+        <br/>
         {props.data.meanings.map(function (meaning, index) {
            return ( 
            <div key={index}>
