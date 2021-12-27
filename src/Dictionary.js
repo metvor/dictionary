@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import './Dictionary.css';
+
 
 export default function Dictionary() {
 
@@ -23,11 +25,14 @@ function handleKeyword(event) {
 
 
 return (
-    <div className="searchForm">
+    <div className="Dictionary">
+        <section>
+        <h2>What word do you want to look up?</h2>
         <form onSubmit={search}>
-            <input type="search" placeholder="Search" autoFocus="on" onChange={handleKeyword}/>
-            <input type="submit" value="Search"/>
+            <input class="form-control" type="text" placeholder="search" aria-label="default input example" onChange={handleKeyword}></input>
             </form>
+            <p>i.e. paris, wine, yoga, coding</p>
+        </section>
         <br/>
         <Results data={results} />
     </div>

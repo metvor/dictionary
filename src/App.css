@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   margin: 30 0;
 }
 .container {
@@ -8,4 +7,13 @@
 
 li {
   list-style: none;
+}
+
+.App footer {
+  text-align: center;
+  color: black;
+  margin-bottom: 50px;
+}
+.App a {
+  color: #AA8DE8;
 }
