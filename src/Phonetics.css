@@ -12,3 +12,8 @@ color: #F8F6FE;
 transition: all 200ms ease;
 
 }
+
+h5 {
+    display: inline;
+    margin-left: 15px;
+}

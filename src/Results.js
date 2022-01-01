@@ -7,7 +7,7 @@ if (props.data) {
     return (
     <div className="Results">
         <section>
-        <h1 className="text-capitalize">{props.data.word}</h1>
+        <h1 className="text-capitalize"><strong>{props.data.word}</strong></h1>
         <br/>
         <Phonetics sound={props.data.phonetics} />
         </section>
