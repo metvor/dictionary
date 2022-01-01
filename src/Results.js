@@ -14,8 +14,8 @@ if (props.data) {
         <br/>
         {props.data.meanings.map(function (meaning, index) {
            return ( 
-               <div>
-           <section key={index}>
+               <div key={index}>
+           <section>
             <Meaning meaning={meaning} />
             </section>
             <br/>

@@ -10,7 +10,7 @@ function App() {
         <Dictionary />
       </div>
       <br />
-        <footer><a href="https://github.com/metvor/dictionary" target="_blank" rel="noreferrer">Open-source code</a> by Mette</footer>
+        <footer><a href="https://github.com/metvor/dictionary" target="_blank" rel="noreferrer">Open-source code</a> by MV</footer>
     </div>
   );
 }
