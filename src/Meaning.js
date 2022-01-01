@@ -11,6 +11,7 @@ return (
                 <div key={index}>
             <Definition definition={definition} />
             <Synonyms synonyms={definition.synonyms}/>
+            <br/>
             </div>
            );
         })}
